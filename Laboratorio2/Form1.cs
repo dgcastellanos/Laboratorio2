@@ -16,7 +16,7 @@ namespace Laboratorio2
 
             if (txtNombre.Text == "")
             {
-                errorProvider1.SetError(txtNombre, "Debe ingresar un nombre");
+                errorProvider1.SetError(txtNombre, "Debe ingresar un nombre.");
                 txtNombre.Focus();
                 return;
             }
@@ -26,7 +26,7 @@ namespace Laboratorio2
 
             if (!Decimal.TryParse(txtSalarioDiario.Text, out AsignacionDia))
             {
-                errorProvider1.SetError(txtSalarioDiario, "Debe ingresar un número");
+                errorProvider1.SetError(txtSalarioDiario, "Debe ingresar un número.");
                 txtSalarioDiario.Focus();
                 return;
             }
@@ -37,7 +37,7 @@ namespace Laboratorio2
             miEmpleado.AsignacionDia = Convert.ToDecimal(txtDiasLaborados.Text);
             miNomina.DiasLaborados   = Convert.ToInt32(txtDiasLaborados.Text);
 
-            MessageBox.Show("Registro almacenado correctamente");
+            MessageBox.Show("Registro almacenado correctamente.");
         }
 
         private void btnCalcularSalario_Click(object sender, EventArgs e)
